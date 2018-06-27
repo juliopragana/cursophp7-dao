@@ -30,12 +30,21 @@ $aluno->insert();
 
 echo $aluno;
 */
-
+/*
+deletando o usuário
 $usuario = new Usuario();
 //carrega pra ver se já existe o usuário
 $usuario->loadById(12);
 $usuario->update("professor", "%%¨$%%$");
 
 echo $usuario;
+*/
+
+$usuario = new Usuario();
+$usuario->loadById(11);
+$usuario->delete();
+echo $usuario;
+
+
 
  ?>
