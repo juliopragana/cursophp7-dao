@@ -19,8 +19,23 @@ require_once("config.php");
 //var_dump($search);
 
 //carrega o usuário e senha
+//$usuario = new Usuario();
+//$usuario->login("root", "@!#@");
+//echo $usuario;
+
+//insert - criando um novo usuário
+/*)
+$aluno = new Usuario("Aluno Novo", "@LASOAD");	
+$aluno->insert();
+
+echo $aluno;
+*/
+
 $usuario = new Usuario();
-$usuario->login("root", "@!#@");
+//carrega pra ver se já existe o usuário
+$usuario->loadById(12);
+$usuario->update("professor", "%%¨$%%$");
+
 echo $usuario;
 
  ?>
